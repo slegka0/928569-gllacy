@@ -1,6 +1,6 @@
 # Личный проект «Глейси»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/23/user/928569).
+* Студент: [Беляев Дмитрий](https://up.htmlacademy.ru/htmlcss/23/user/928569).
 * Наставник: [Вадим Акулин](https://htmlacademy.ru/profile/bolshu).
 
 ---
