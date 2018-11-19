@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/23/user/928569).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Акулин](https://htmlacademy.ru/profile/bolshu).
 
 ---
 
