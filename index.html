@@ -2,11 +2,80 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Главная</title>
   </head>
   <body>
+  	<!--Шапка главной страницы-->
+		<header class="main-header">
+			<nav class="main-navigation">
+				<img src="img/logo.svg" width="" height="" alt="Логотип Глейси">
+				<ul class="site-navigation">
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="">Доставка и оплата</a></li>
+					<li><a href="">О Компании</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="search">Поиск</li>
+					<li class="login-link">Вход</li>
+					<li class="cart">Корзина</li>
+				</ul>
+			</nav>	
+		</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+		<!--Основное содержание главной страницы-->
+		<main class="container">
+			 <h1 class="visually-hidden">Магазин Глейси</h1>
 
+			 <section class="features">
+			 	<h2 class="visually-hidden">Преимущества</h2>
+			 	<p class="features-label">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+			 	<ul class="features-list">
+			 		<li class="feature-item"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и 
+			 		 проверенных временем технологий.</p></li>
+			 		<li class="feature-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и 
+			 		 добавки произведены из натурального, экологически чистого сырья. </p></li>
+			 		<li class="feature-item"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает 
+			 		 долговременное сотрудничество. </p></li>
+			 		<li class="feature-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять
+			 		 в пути и позволяет сохранить превосходный вкус.</p></li>
+			 	</ul>			
+			 </section>
+
+			 <article class="blog-news">
+			 	<h2 class="visually-hidden">Блог Глейси</h2>
+			 	<p class="blog-news-label">Новое в нашем блоге</p>
+			 	<p class="blog-news-title">10 способов сервировки фруктовых щербетов к столу</p>
+			 </article>
+
+			 <section class="subscription">
+			 	<h2 class="visually-hidden">Подписка на Рассылку</h2>
+			 	<p class="subscription-title">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой 
+			 	 ненужной ерунды. Честно =)  </p>
+			 	<form class="">
+			 		<!--Здесь будет Форма-->
+			 		<!--<input class="subscription-email" type="text" value="Электронная почта">
+			 		<a class="button" href="">Отправить</a>-->
+			 	</form>
+			 </section>
+		</main>
+		
+		<!--Подвал-->
+		<footer class="main-footer">
+				<ul class="social-buttons">
+					<li><a class="social-button" href="">Твиттер</a></li>
+					<li><a class="social-button" href="">Инстаграм</a></li>
+					<li><a class="social-button" href="">Фейсбук</a></li>
+					<li><a class="social-button" href="">Вконтакте</a></li>
+				</ul>		
+				<ul class="footer-navigation">
+					<li><a class="footer-navigation-item" href="">Для поставщиков</a></li>
+					<li><a class="footer-navigation-item" href="">О производстве</a></li>
+					<li><a class="footer-navigation-item" href="">Наши документы</a></li>
+					<li><a class="footer-navigation-item" href="">Экологические стандарты</a></li>
+				<ul>
+				<p class="copyright">
+					Сделано в HTML Academy &copy2017
+				</p>
+		</footer>
   </body>
 </html>
