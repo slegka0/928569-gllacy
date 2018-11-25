@@ -8,13 +8,12 @@
   	<!--Шапка Каталога-->
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a href="index.html"><img src="./img/logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
+				<a class="main-navigation-logo" href="index.html"><img src="./img/logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
 				<ul class="site-navigation">
 					<li class="site-navigation-current">
 						<a href="catalog.html">Каталог</a>
 						<ul class="drop-menu">
-							<li><a class="drop-menu-supreme" href="#">Новинки</a></li>
-							
+							<li><a class="drop-menu-supreme" href="#">Новинки</a></li>							
 							<li><a href="#">Сливочное</a></li>
 							<li><a href="#">Щербет</a></li>
 							<li><a href="#">Фруктовый лёд</a></li>
@@ -24,16 +23,16 @@
 					<li><a href="#">Доставка и оплата</a></li>
 					<li><a href="#">О Компании</a></li>
 				</ul>
-				<ul class="user-navigation">
-					<li><button class="user-navigation-button search" title="Поиск">Поиск</button></li>
-					<li><button class="user-navigation-button enter" title="Вход">Вход</button></li>
-					<li><button class="user-navigation-button cart" title="Корзина">Корзина</button></li>
-				</ul>
-			</nav>	
-			<section class="header-info">
+			</nav>
+			<ul class="user-navigation">
+				<li><button class="user-navigation-button search" title="Поиск">Поиск</button></li>
+				<li><button class="user-navigation-button enter" title="Вход">Вход</button></li>
+				<li><button class="user-navigation-button cart" title="Корзина">Корзина</button></li>
+			</ul>	
+			<div class="header-info">
         <span class="header-info-worktime">С 10 до 20 ежедневно</span><br>
         <span class="header-info-telephone">8 812 450-25-25</span>
-      </section>
+      </div>
 		</header>
 
 		<!--Основное содержание Каталога-->
@@ -51,11 +50,9 @@
 				<ul class="catalog-list">
 					<!--Первое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
@@ -63,20 +60,20 @@
 								</span>
 							</a>
 						</h3>	
-						<b class="catalog-item-price">
-							310&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						<div class="catalog-item-details">
+							<b class="catalog-item-price">
+								310&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Второе мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
@@ -84,20 +81,20 @@
 								</span>
 							</a>
 						</h3>	
-						<b class="catalog-item-price">
-							380&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						<div class="catalog-item-details">
+							<b class="catalog-item-price">
+								380&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Третье мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
@@ -105,20 +102,20 @@
 								</span>
 							</a>
 						</h3>	
-						<b class="catalog-item-price">
-							355&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						<div class="catalog-item-details">
+							<b class="catalog-item-price">
+								355&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Четвертое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
@@ -126,180 +123,182 @@
 								</span>
 							</a>
 						</h3>	
-						<b class="catalog-item-price">
-							415&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						<div class="catalog-item-details">
+							<b class="catalog-item-price">
+								415&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Пятое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочное с брусничным джемом">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочное с брусничным джемом">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочное с брусничным джемом"
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							325&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								325&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
-					<!--шестое мороженное-->
+					<!--Шестое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочно-черничное с цельными ягодами черники">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочно-черничное с цельными ягодами черники
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							410&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								410&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Седьмое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочно-лимонное с карамельной присыпкой">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочно-лимонное с карамельной присыпкой
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							375&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								375&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Восьмое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочное с шоколадной стружкой">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочное с шоколадной стружкой
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							320&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								320&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Девятое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочно-ванильное с кусочками шоколада">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочно-ванильное с кусочками шоколада
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							440&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								440&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Десятое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочное с ментоловым сиропом">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочное с ментоловым сиропом">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочное с ментоловым сиропом
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							435&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								435&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Одиннадцатое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочное с кусочками черного шоколада">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочное с кусочками черного шоколада
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							355&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								355&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 					<!--Двенадцатое мороженное-->
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-              <a href="#">
-                <img src="" width="" height="" alt="Сливочное с мятным сиропом">
+              <a class="catalog-item-image" href="#">
+                <img src="" width="267" height="267" alt="Сливочное с мятным сиропом">
               </a>
-            </p>
 						<h3>
 							<a href="#">
 								<span class="catalog-item-title">
 									Сливочное с мятным сиропом
 								</span>
 							</a>
-						</h3>	
-						<b class="catalog-item-price">
-							420&#8381;
-						</b>
-						<span class="catalog-item-weight">
-							/кг
-						</span>
+						</h3>
+						<div class="catalog-item-details">	
+							<b class="catalog-item-price">
+								420&#8381;
+							</b>
+							<span class="catalog-item-weight">
+								/кг
+							</span>
+						</div>
 					</li>
 				</ul>
 			</section>

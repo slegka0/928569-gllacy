@@ -8,13 +8,12 @@
   	<!--Шапка главной страницы-->
 		<header class="main-header">
 			<nav class="main-navigation">
-				<img src="./img/logo.svg" width="154" height="64" alt="Логотип Глейси">
+				<a class="main-navigation-logo"><img src="./img/logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
 				<ul class="site-navigation">
 					<li>
 						<a href="catalog.html">Каталог</a>
 						<ul class="drop-menu">
-							<li><a class="drop-menu-supreme" href="#">Новинки</a></li>
-							
+							<li><a class="drop-menu-supreme" href="#">Новинки</a></li>							
 							<li><a href="#">Сливочное</a></li>
 							<li><a href="#">Щербет</a></li>
 							<li><a href="#">Фруктовый лёд</a></li>
@@ -24,16 +23,16 @@
 					<li><a href="#">Доставка и оплата</a></li>
 					<li><a href="#">О Компании</a></li>
 				</ul>
-				<ul class="user-navigation">
-					<li><button class="user-navigation-button search" title="Поиск">Поиск</button></li>
-					<li><button class="user-navigation-button enter" title="Вход">Вход</button></li>
-					<li><button class="user-navigation-button cart" title="Корзина">Корзина</button></li>
-				</ul>
-			</nav>	
-			<section class="header-info">
+			</nav>
+			<ul class="user-navigation">
+				<li><button class="user-navigation-button search" title="Поиск">Поиск</button></li>
+				<li><button class="user-navigation-button enter" title="Вход">Вход</button></li>
+				<li><button class="user-navigation-button cart" title="Корзина">Корзина</button></li>
+			</ul>	
+			<div class="header-info">
         <span class="header-info-worktime">С 10 до 20 ежедневно</span><br>
         <span class="header-info-telephone">8 812 450-25-25</span>
-      </section>
+      </div>
 		</header>
 
 		<!--Основное содержание главной страницы-->
@@ -85,7 +84,7 @@
 					<li><a class="social-button" href="#">Вконтакте</a></li>
 				</ul>		
 				<ul class="footer-navigation">
-					<li><a class="footer-navigation-item" href="#">Для поставщиков</a></li>
+					<li><a class="footer-navigation-item heart" href="#">Для поставщиков</a></li>
 					<li><a class="footer-navigation-item" href="#">О производстве</a></li>
 					<li><a class="footer-navigation-item" href="#">Наши документы</a></li>
 					<li><a class="footer-navigation-item" href="#">Экологические стандарты</a></li>
@@ -94,5 +93,6 @@
 					Сделано в HTML Academy &copy;2017
 				</p>
 		</footer>
+
   </body>
 </html>
