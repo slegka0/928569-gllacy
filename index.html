@@ -25,9 +25,41 @@
 				</ul>
 			</nav>
 			<ul class="user-navigation">
-				<li class="user-navigation-button search">Поиск</li>
-				<li class="user-navigation-button enter">Вход</li>
-				<li class="user-navigation-button cart">Корзина</li>
+				<li class="user-navigation-button search">Поиск
+					<ul>
+						<li class="search-drop-menu">
+							<form class="search-form" id="search-form" action="https://echo.htmlacademy.ru" method="post">
+								<label class="visually-hidden" for="search-field">Поле для поиска</label>
+								<input class="search-form-input" type="search" id="search-field" placeholder="Что ищем?">
+								<button type="submit" class="visually-hidden">Найти</button>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li class="user-navigation-button enter" aria-label="Вход в личный кабинет">Вход
+					<ul>
+						<li class="login-drop-menu">
+							<form class="login-form" id="login-form" action="https://echo.htmlacademy.ru" method="post">
+								<p class="login-form-row">
+									<label class="visually-hidden" for="login-field">Поле для электронной почты</label>
+									<input class="login-form-input" type="email" id="login-field" placeholder="Электронная почта">
+								</p>
+								<p class="login-form-row">
+									<label class="visually-hidden" for="password-field">Поле для пароля</label>
+									<input class="login-form-input" type="password" id="password-field" placeholder="Пароль">
+								</p>
+								<div class="login-form-row">
+									<button type="submit" class="button login-form-button">Войти</button>
+									<div class="login-form-column">
+										<a class="login-form-link" href="#">Забыли пароль?</a>
+										<a class="login-form-link" href="#">Новая регистрация</a>
+									</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li class="user-navigation-button cart">Пусто</li>
 			</ul>	
 			<div class="header-info">
         <span class="header-info-worktime">С 10 до 20 ежедневно</span><br>
@@ -66,10 +98,10 @@
 				 	<h2 class="visually-hidden">Подписка на рассылку</h2>
 			 		<p class="subscription-title">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой 
 				 	 ненужной ерунды. Честно =)  </p>
-			 		<form class="">
-				 		<!--Здесь будет Форма-->
-			 			<!--<input class="subscription-email" type="text" value="Электронная почта">
-			 			<a class="button" href="#">Отправить</a>-->
+			 		<form class="subscription-login" id="subscription-login" action="https://echo.htmlacademy.ru" method="post">
+				 		<label class="visually-hidden" for="subscription-login-field">Поле для поиска</label>
+						<input class="subscription-login-input" type="email" id="subscription-login-field" placeholder="Электронная почта">
+				 		<button type="submit" class="button subscription-login-button">Отправить</button>
 				 	</form>
 			 	</section>
 			</section>
@@ -93,6 +125,27 @@
 					Сделано в HTML Academy &copy;2017
 				</p>
 		</footer>
+	
+	<section class="feedback">
+		<h2 class="visually-hidden">Форма для обратной связи</h2>	
+		<form class="feedback-form"  id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="feedback-form-title">Мы обязательно вам ответим</p>
+			<p class="feedback-form-row">
+				<label class="visually-hidden" for="feedback-login">Поле для имени</label>
+				<input type="text" class="feedback-login" id="feedback-login" placeholder="Как вас зовут?">
+			</p>
+			<p class="feedback-form-row">
+				<label class="visually-hidden" for="feedback-email">Поле для электронной почты</label>
+				<input type="email" class="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+			</p>
+			<p class="feedback-form-row">
+				<label class="visually-hidden" for="feedback-message">Поле для ввода текста сообщения</label>
+				<textarea class="feedback-message" id="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
+			</p>
+			<button type="submit" class="button feedback-form-button">Отправить</button>
+		</form>
+		<button class="close-button close-button-feedback">Закрыть окно</button>
+	</section>
 
   </body>
 </html>

@@ -25,9 +25,64 @@
 				</ul>
 			</nav>
 			<ul class="user-navigation">
-				<li class="user-navigation-button search">Поиск</li>
-				<li class="user-navigation-button enter">Вход</li>
-				<li class="user-navigation-button enter">Корзина</li>
+				<li class="user-navigation-button search">Поиск
+					<ul>
+						<li>
+							<form class="search-form" id="search-form" action="https://echo.htmlacademy.ru" method="post">
+								<label class="visually-hidden" for="search-field">Поле для поиска</label>
+								<input class="search-form-input" type="search" id="search-field" placeholder="Что ищем?">
+								<button type="submit" class="visually-hidden">Найти</button>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li class="user-navigation-button enter" aria-label="Вход в личный кабинет">Вход
+					<ul>
+						<li>
+							<form class="login-form" id="login-form" action="https://echo.htmlacademy.ru" method="post">
+								<p class="login-form-row">
+									<label class="visually-hidden" for="login-field">Поле для электронной почты</label>
+									<input class="login-form-input" type="email" id="login-field" placeholder="Электронная почта">
+								</p>
+								<p class="login-form-row">
+									<label class="visually-hidden" for="password-field">Поле для пароля</label>
+									<input class="login-form-input" type="password" id="password-field" placeholder="Пароль">
+								</p>
+								<div class="login-form-row">
+									<button type="submit" class="button login-form-button">Войти</button>
+									<div class="login-form-column">
+										<a class="login-form-link" href="#">Забыли пароль?</a>
+										<a class="login-form-link" href="#">Новая регистрация</a>
+									</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li class="user-navigation-button cart">2 товара
+					<ul>
+						<li class="cart-drop-menu">
+							<table class="cart-table">
+								<tr>
+									<td><button class="close-button close-button-cart-table">Убрать из корзины</button></td>		
+									<td><img src="#" width="33" height="33" alt="Сливочное с апельсиновым джемом"></td>
+									<td>Сливочное с апельсиновым джемом</td>		
+									<td>1,5кг*<span class="cart-table-price">200 руб.</span></td>
+									<td>300 руб.</td>				
+								</tr>	
+								<tr>
+									<td><button class="close-button close-button-cart-table">Убрать из корзины</button></td>		
+									<td><img src="#" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+									<td>Клубничный пломбир с присыпкой из белого шоколада</td>		
+									<td>1,5кг*<span class="cart-table-price">300 руб.</span></td>
+									<td>450 руб.</td>				
+								</tr>	
+							</table>
+							<p class="cart-table-sum">Итого: 750 руб.</p>
+							<button type="submit" class="button cart-table-button">Оформить заказ</button>
+						</li>
+					</ul>
+				</li>
 			</ul>	
 			<div class="header-info">
         <span class="header-info-worktime">С 10 до 20 ежедневно</span><br>
