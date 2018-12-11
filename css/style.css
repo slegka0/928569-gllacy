@@ -27,7 +27,10 @@ a {
 .main-navigation {
 	line-height: 18px;
 }
+
 .drop-menu {
+	display: none;
+
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 16px;
@@ -39,6 +42,14 @@ a {
 .user-navigation-button {
 	font-size: 14px;
 	font-height: 16px;
+}
+.search-form,
+.login-form,
+.cart-list {
+	display: none;
+}
+.site-navigation-link {
+	color: #ffffff;
 }
 .header-info {
 	text-align: right;
@@ -95,12 +106,12 @@ a {
 	font-height: 18px;
 	text-decoration: underline;
 }
-.heart {
-	font-weight: bold;
-}
 .copyright {
 	font-size: 12px;
 	font-height: 18px;
+}
+.feedback {
+	display: none;
 }
 .feedback-form-title {
 	font-size: 24px;
@@ -124,4 +135,72 @@ a {
 }
 .drop-menu li:active{
 	background-color: #f6b5a5;
+}
+.breadcrumbs {
+	color: #ffffff;
+
+	font-size: 14px;
+	line-height: 16px;
+}
+.breadcrumbs > li > a {
+	color: #ffffff;
+}
+.breadcrumbs > li > a:hover {
+	color: #323232;
+	background-color: #ffffff;
+}
+.catalog-item-price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+}
+.catalog-item-title {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+
+	text-align: center;
+}
+.page-title {
+	font-size: 35px;
+	line-height: 41px;
+}
+.site-navigation-link:hover {
+	color: #323232;
+	background-color: #ffffff;
+}
+.catalog-item-weight {
+	font-size: 30px;
+}
+.footer-navigation-item {
+	color: #ffffff;
+
+	font-weight: normal;
+}
+.footer-navigation-item:hover {
+	color: #323232;
+	background-color: #ffffff;
+}
+.heart {
+	font-weight: bold;
+}
+.site-navigation-current {
+	color: #ffffff;
+	background-color: #d07058;
+}
+.blog-news {
+	background-color: #ffffff;
+  background-image: url(../img/strawberry-bg.jpg);
+  background-repeat: no-repeat;
+}
+.subscription {
+	background-color: #f8f7f4;
+	background-image: url(../img/post-office-bg.svg);
+  background-repeat: no-repeat;
+}
+.features {
+	background-color: #eaddbf;
+	background-image: url(../img/waffle-bg.jpg);
+	background-repeat: no-repeat;
 }
