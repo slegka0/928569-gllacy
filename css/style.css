@@ -2,14 +2,13 @@ body {
 	margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: bold;
   color: #ffffff;
 
-  background-color: #849d8f;
-  background-image: url("../img/background-1.jpg");
+  background-color: #849d8f;  
 }
 a {
 	text-decoration: none;
@@ -41,7 +40,7 @@ a {
 }
 .user-navigation-button {
 	font-size: 14px;
-	font-height: 16px;
+	line-height: 16px;
 }
 .search-form,
 .login-form,
@@ -68,7 +67,7 @@ a {
 }
 .features-label {
 	font-size: 24px;
-	font-height: 30px;
+	line-height: 30px;
 	font-weight: 500;
 }
 .blog-news {
@@ -79,7 +78,7 @@ a {
 }
 .blog-news-title {
 	font-size: 24px;
-	font-height: 30px;
+	line-height: 30px;
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -103,19 +102,19 @@ a {
 }
 .footer-navigation {
 	font-size: 13px;
-	font-height: 18px;
+	line-height: 18px;
 	text-decoration: underline;
 }
 .copyright {
 	font-size: 12px;
-	font-height: 18px;
+	line-height: 18px;
 }
 .feedback {
 	display: none;
 }
 .feedback-form-title {
 	font-size: 24px;
-	font-height: 28px;
+	line-height: 28px;
 	color: #000000;
 }
 .feedback-login::placeholder,
@@ -125,10 +124,14 @@ a {
 }
 
 .feedback-form input{
-	font-height: 24px;
+	line-height: 24px;
 }
-.underlined {
+.footer-underlined-link {
 	text-decoration: underline;
+	color: #ffffff;
+}
+.footer-underlined-link:hover {
+	color: #d07058;
 }
 .drop-menu li:hover {
 	background-color: #fbded7;
@@ -146,8 +149,7 @@ a {
 	color: #ffffff;
 }
 .breadcrumbs > li > a:hover {
-	color: #323232;
-	background-color: #ffffff;
+	color: #d07058;
 }
 .catalog-item-price {
 	font-size: 45px;
@@ -179,8 +181,7 @@ a {
 	font-weight: normal;
 }
 .footer-navigation-item:hover {
-	color: #323232;
-	background-color: #ffffff;
+	color: #d07058;
 }
 .heart {
 	font-weight: bold;
