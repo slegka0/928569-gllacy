@@ -10,10 +10,7 @@ body {
 
   background-color: #849d8f;  
 }
-/*Для видимости сеток*/
-* {
- background: rgba(0,0,255,0.05);
-}
+
 *, *::before, *::after {
 	box-sizing: inherit;
 }
@@ -51,6 +48,7 @@ a {
 .user-navigation-button {
 	font-size: 14px;
 	line-height: 16px;
+	margin-left: 10px;
 }
 .search-form,
 .login-form,
@@ -222,8 +220,7 @@ a {
   width: 550px;
 }
 .subscription-inside {
-	background-image: url(../img/sand-bg.jpg);
-  background-repeat: no-repeat;
+	background-color: #f8f7f4;
   width: 539px;
   border-radius: 15px;
 }
@@ -241,7 +238,6 @@ a {
 }
 .header-container {
 	display: flex;
-	align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -255,24 +251,16 @@ a {
 }
 .site-navigation {
 	display: flex;
-	align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .user-navigation {
 	display: flex;
-	align-items: flex-start;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 	width: 267px;
-		/*временно для сетки*/
-		height: 64px;
-}
-.user-navigation li {
-	margin-left: 10px;
-	
 }
 .site-navigation,
 .user-navigation {
@@ -309,10 +297,8 @@ a {
 
 .main-users-info {
 	display: flex;
-	align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
-	
 }
 .subscription {
 	padding: 5px;
@@ -338,25 +324,19 @@ a {
 
 .main-footer {
 	display: flex;
-	align-items: flex-start;
-  flex-direction: row;
   justify-content: space-between;
   margin-top: 35px;
 }
 .social-buttons {
 	display: flex;
-	justify-content: flex-start;
-  flex-direction: row;
   width: 267px;
   margin: 0;
   padding: 0;
 }
 
-
 .footer-navigation {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;	
+	flex-wrap: wrap;	
 	margin: 0;
   padding: 0;
 	width: 350px;
