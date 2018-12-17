@@ -659,7 +659,3 @@ input[type="radio"].visually-hidden {
 	left: -310px;
 	top: 35px;
 }
-/*Для видимости сеток*/ 
-* { 
-background: rgba(0,0,255,0.05); 
-}
