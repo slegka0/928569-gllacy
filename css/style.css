@@ -296,8 +296,7 @@ a {
 }
 
 .main-users-info {
-	display: flex;
-  flex-direction: row;
+	display: flex;	
   justify-content: space-between;
 }
 .subscription {
