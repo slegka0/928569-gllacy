@@ -74,6 +74,9 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 .site-navigation-link {
+	display: block;
+	padding: 7px 14px 7px 14px;
+	border-radius: 16px;
 	color: #ffffff;
 }
 .header-info {
@@ -207,10 +210,7 @@ input[type="radio"].visually-hidden {
 .heart {
 	font-weight: bold;
 }
-.site-navigation-current {
-	color: #ffffff;
-	background-color: #d07058;
-}
+
 .blog-news {	
 	background-color: #ffffff;
   background-image: url(../img/strawberry-bg.jpg);
@@ -262,7 +262,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
 }
-/*Не могу найти ошибку по паддингам или еще где математика подвела, но на странице каталога, в корзине, надпись "2 товара" пишется на двух строках :(*/
+
 .user-navigation {
 	display: flex;
   justify-content: flex-end;
@@ -442,9 +442,11 @@ input[type="radio"].visually-hidden {
 
 
 /*Декоративные элементы*/
-.box-catalog {
+.box-catalog,
+.box-delivery,
+.box-company {
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 }
 .box-catalog:hover .drop-menu {
 	display: block;
@@ -453,19 +455,21 @@ input[type="radio"].visually-hidden {
 	text-decoration: underline;
 	text-decoration-color: #adbdb4;
 }
-.site-navigation li {
-	padding: 7px 14px 8px 14px;
-	border-radius: 16px;
-}
 
-.site-navigation li:hover {
+.box-catalog:hover .site-navigation-link,
+.box-delivery:hover .site-navigation-link,
+.box-company:hover .site-navigation-link {
 	background-color: #ffffff;
 }
-.site-navigation > li:hover > a {
+.box-catalog:hover > a,
+.box-delivery:hover > a,
+.box-company:hover > a {
 	color: #323232;
 	text-decoration: none;
 }
-.site-navigation li:active {
+.box-catalog:active .site-navigation-link,
+.box-delivery:active .site-navigation-link,
+.box-company:active .site-navigation-link {
 	background-color: #ededed;
 	box-shadow: inset 0px 2px 1px 0px #696969;
 }
@@ -476,7 +480,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 7px;
 
 	left: -6px;
-  top: 35px;
+  top: 37px;
 	z-index: 2;
 	position: absolute;
 
@@ -514,9 +518,7 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
 }
-.site-navigation-current a {
-	text-decoration: none;
-}
+
 .subscription-login-button {
 	padding: 13px 20px;
 	margin: 0;
@@ -679,7 +681,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	padding: 0;
 	margin: 0;
-
+	
 	justify-content: center;
   align-items: center;
   width: 33px;
@@ -890,4 +892,15 @@ input[type="radio"].visually-hidden {
 	height: 61px;
 
 	background-image: url(../img/hit.svg);
+}
+.main-navigation .site-navigation-link-current {
+	background-color: #d07058;
+	text-decoration: none;
+}
+.user-navigation-container {
+	padding: 24px 0 0 0;
+}
+/*Для видимости сеток*/ 
+* { 
+background: rgba(0,0,255,0.05); 
 }
