@@ -56,8 +56,8 @@ input[type="radio"].visually-hidden {
 	line-height: 16px;
 	margin-left: 10px;
 }
-.search-drop-menu,
-.login-drop-menu,
+.search-form,
+.login-form,
 .cart-list {
 	display: none;
 }
@@ -69,7 +69,8 @@ input[type="radio"].visually-hidden {
 .breadcrumbs,
 .catalog-list,
 .features-list,
-.drop-menu {
+.drop-menu,
+.hits-list {
 	list-style: none;
 }
 .site-navigation-link {
@@ -171,21 +172,28 @@ input[type="radio"].visually-hidden {
 .breadcrumbs > li > a:hover {
 	color: #d07058;
 }
-.catalog-item-price {
+.catalog-item-price,
+.hits-item-price {
 	font-size: 45px;
 	line-height: 45px;	
 }
-.catalog-item-title {
+.catalog-item-title,
+.hits-item-title {
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
 }
+.hits-item h3,
+.catalog-item h3 {
+	margin: 0;
+}
 .page-title {
 	font-size: 35px;
 	line-height: 41px;
 }
-.catalog-item-weight {
+.catalog-item-weight,
+.hits-item-weight {
 	font-size: 30px;
 }
 .footer-navigation-item {
@@ -240,23 +248,23 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 .main-navigation {
+	display: flex;
 	width: 560px;
 	margin: 0;
-	padding: 0;
+	padding: 10px 0px 0px 0px;
 }
-.main-header-logo {
-	margin-right: 25px;
+.site-navigation-logo {
+	margin-right: 10px;
 }
 .site-navigation {
 	display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
   align-items: center;
 }
 /*Не могу найти ошибку по паддингам или еще где математика подвела, но на странице каталога, в корзине, надпись "2 товара" пишется на двух строках :(*/
 .user-navigation {
 	display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 	width: 267px;
@@ -296,9 +304,52 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 22px;
 }
 
-.main-users-info {
+.main-users-info,
+.main-offers-info {
 	display: flex;	
   justify-content: space-between;
+}
+.main-offers-info {
+	margin-bottom: 40px;
+}
+.offer-label {
+	font-size: 35px;
+	line-height: 41px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 11px;
+}
+.offer-title {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 38px;
+}
+.offer-button {
+	align-self: flex-end;
+  margin-top: auto;
+
+	font-size: 18px;
+	line-height: 24px;
+	padding: 15px 21px;
+	margin: 0;
+}
+.raspberries {
+	background-image: url(../img/raspberry-bg.jpg);
+	background-repeat: no-repeat;
+}
+.chocolate {
+	background-image: url(../img/chocolate-bg.jpg);
+	background-repeat: no-repeat;
+}
+.offer-item {
+	display: flex;
+  flex-direction: column;
+
+	width: 560px;
+	padding: 20px;
+	border-radius: 15px;
 }
 .subscription {
 	padding: 5px;
@@ -326,6 +377,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
   justify-content: space-between;
   margin-top: 35px;
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 .social-buttons {
 	display: flex;
@@ -349,26 +402,29 @@ input[type="radio"].visually-hidden {
 	margin: 0;
   padding: 0;
 	width: 267px;
-  text-align: right;
+	text-align: right;
 
 }
 .social-button {
 	margin-right: 10px;
 }
-.catalog-list {
+.catalog-list,
+.hits-list {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 }
-.catalog-item {
-
+.catalog-item,
+.hits-item {
 	width: 267px;
 	text-align: center;
 	margin-right: 26px;
-	margin-bottom: 55px;
+	margin-bottom: 40px;
 }
-.catalog-item:nth-child(4n) {
+
+.catalog-item:nth-child(4n),
+.hits-item:nth-child(4n) {
 	margin-right: 0;
 }
 .breadcrumbs {
@@ -388,6 +444,7 @@ input[type="radio"].visually-hidden {
 /*Декоративные элементы*/
 .box-catalog {
 	position: relative;
+	padding-bottom: 20px;
 }
 .box-catalog:hover .drop-menu {
 	display: block;
@@ -401,14 +458,14 @@ input[type="radio"].visually-hidden {
 	border-radius: 16px;
 }
 
-.site-navigation li:not(:first-child):hover {
+.site-navigation li:hover {
 	background-color: #ffffff;
 }
-.site-navigation > li:not(:first-child):hover > a {
+.site-navigation > li:hover > a {
 	color: #323232;
 	text-decoration: none;
 }
-.site-navigation li:not(:first-child):active {
+.site-navigation li:active {
 	background-color: #ededed;
 	box-shadow: inset 0px 2px 1px 0px #696969;
 }
@@ -422,6 +479,8 @@ input[type="radio"].visually-hidden {
   top: 35px;
 	z-index: 2;
 	position: absolute;
+
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .drop-menu a {
 	color: #323232;
@@ -432,10 +491,10 @@ input[type="radio"].visually-hidden {
 	padding: 6px 20px;
 	border-radius: 0px;
 }
-.box-catalog .drop-menu li:hover {
+.drop-menu li:hover {
 	background-color: #fbded7;
 }
-.box-catalog .drop-menu li:active{
+.drop-menu li:active{
 	background-color: #f6b5a5;
 	box-shadow: none;
 }
@@ -464,25 +523,27 @@ input[type="radio"].visually-hidden {
 	margin-left: 10px;
 }
 .user-navigation li {
+	display: flex;
 	position: relative;
 	padding: 7px 15px 7px 45px;
 	background-color: rgba(255,255,255,0.2);
 	border-radius: 16px;
+	white-space: nowrap;
 }
 .user-navigation li:hover {
 	background-color: rgba(255,255,255,1);
 	color: #323232;
 }
-.search:hover .search-drop-menu {
+.search:hover .search-form{
 	display: block;	
 }
-.user-navigation .search-drop-menu {
+.user-navigation .search-form {
 	position: absolute;
 	width: 340px;
 	padding: 20px 15px;
 	border-radius: 5px;
 	z-index: 2;
-	background: #ffffff;
+	background: #f8f7f4;
 }
 .feature-item {
 	position: relative;
@@ -499,16 +560,16 @@ input[type="radio"].visually-hidden {
 	top: -10px;
 
 }
-.feature-item:nth-child(1)::before {
+.ice-cream::before {
 	background-image: url(../img/ice-cream.svg);
 }
-.feature-item:nth-child(2)::before {
+.cow::before {
 	background-image: url(../img/cow.svg);
 }
-.feature-item:nth-child(3)::before {
+.eco::before {
 	background-image: url(../img/eco.svg);
 }
-.feature-item:nth-child(4)::before {
+.thermometer::before {
 	background-image: url(../img/thermometer.svg);
 }
 .social-button {
@@ -537,9 +598,17 @@ input[type="radio"].visually-hidden {
 	background-image: url(../img/heart.svg);
 }
 .copyright {
+	display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  justify-content: flex-end;
+
+
+}
+.copyright span{
 	position: relative;
 }
-.copyright::before {
+.copyright span::before {
 	content: "";
 
 	position: absolute;
@@ -549,12 +618,14 @@ input[type="radio"].visually-hidden {
 
 	background-image: url(../img/logo-htmlacademy.svg);
 
-	top: -50px;
+	top: -50px ;
 }
-.catalog-item {
+.catalog-item,
+.hits-item {
 	position: relative;
 }
-.catalog-item-details {
+.catalog-item-details,
+.hits-item-details {
 	position: absolute;
 	top: 205px;
 }
@@ -562,20 +633,22 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	margin-right: 20px;
 }
-.breadcrumbs > li > a {
+.breadcrumbs a {
 	text-decoration: underline;
 	text-decoration-color: #adbdb4;
 }
-.breadcrumbs > li > a::after {
+.breadcrumbs a::after {
   content: "»";
   position: absolute;
   right: -14px;
 }
-.catalog-item a {
+.catalog-item a,
+.hits-item a {
 	text-decoration: underline;
 	text-decoration-color: #adbdb4;
 }
-.catalog-item a:hover span{
+.catalog-item-title:hover,
+.hits-item-title:hover {
 	color: #ffbc9e;
 }
 .enter {
@@ -607,11 +680,13 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	margin: 0;
 
+	justify-content: center;
+  align-items: center;
   width: 33px;
   height: 33px;
   border-radius: 50%;
 }
-/*Не могу сообразить, как центрировать лупу в родителе, туплю*/
+
 .search svg {
 	position: absolute;
 
@@ -634,28 +709,185 @@ input[type="radio"].visually-hidden {
 }
 .subscription-login-input,
 .search-form-input {
-	 border: 1px solid #d3d3d2;
-   border-radius: 5px;
-   background: #ffffff;
+	border: none;
+	box-shadow: 0 0 0 1px #d3d3d2;
+  border-radius: 5px;
+  background: #ffffff;
 }
-/*Бордер меняет размеры элемента и всё начинает шевелиться, не зняю как по другому бороться :(*/ 
+
 .subscription-login-input:hover,
-.search-form-input:hover {
-	border: 2px solid #c7c6c5;
-	margin: -2px 0 -2px 0;
+.search-form-input:hover,
+.login-form-input:hover {
+	box-shadow: 0 0 0 2px #c7c6c5;
 }
 .subscription-login-input:focus
-.search-form-input:focus {
-	border: 2px solid #8fbdec;
-	margin: -2px 0 -2px 0;
+.search-form-input:focus
+.login-form-input:focus {
+	box-shadow: 0 0 0 2px #8fbdec;
 }
 .search-form-input {
 	width: 310px;
 	padding: 15px;
 }
-.search-drop-menu {
+.search-form {
 	position: absolute;
 	background: #f8f7f4;
-	left: -310px;
+	right: 0px;
 	top: 35px;
+}
+.drop-menu-supreme {
+	position: relative;
+}
+.drop-menu-supreme::after {
+	content: "";
+	position: absolute;
+	width: 128px;
+	height: 1px;
+	bottom: -7px;
+	left: -12px;
+	background-color: #d1d0ce;
+}
+.enter {
+	position: relative;
+}
+.enter:hover .login-form {
+	display: flex;
+}
+.login-form-row:not(:last-child) {
+	margin-bottom: 20px;
+}
+.login-form {
+	position: absolute;
+	flex-direction: column;
+	padding: 20px;
+	
+	width: 277px;
+	z-index: 2;
+	right: 0px;
+	top: 32px;
+
+	background-color: #f8f7f4;
+	border-radius: 5px;
+}
+.login-form-input {
+	width: 240px;
+	padding: 15px;
+
+	background-color: #ffffff;
+	box-shadow: 0 0 0 1px #d3d3d2;
+	border: none;
+	border-radius: 5px;
+}
+.login-form-buttons-box {
+	display: flex;
+	justify-content: space-between;
+}
+.login-form-button {
+	font-size: 18px;
+	padding: 15px 26px;
+}
+.login-form-link {
+	font-size: 13px;
+	color: #323232;
+
+	text-decoration: underline;
+	text-decoration-color: #adacaa;
+}
+.login-form-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.login-form-column a:hover {
+	color: #e84d37;
+}
+.filled-cart {
+	position: relative;
+}
+.filled-cart:hover .cart-list {
+	display: flex;
+}
+.cart-list {
+	flex-direction: column;
+	position: absolute;
+
+
+	width: 540px;
+	padding: 20px 15px;
+	z-index: 2;
+	right: 0px;
+	top: 32px;
+
+	background-color: #f8f7f4;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+  vertical-align: middle;
+}
+.cart-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  align-items: center;
+	
+	margin-bottom: 20px;
+}
+.cart-item:nth-last-child(2) {
+	margin-bottom: 0px;
+}
+
+.cart-button {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+}
+.cart-item-price {
+	color: #999999;
+}
+.cart-total {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	position: relative;
+
+	margin-top: 35px;
+}
+.cart-sum {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: right;
+}
+.cart-total::before {
+	content: "";
+	position: absolute;
+	width: 512px;
+	height: 1px;
+	right: 0px;
+	top: -15px;
+
+	background-color: #d1d0ce;
+}
+.cart-item-name {
+	font-size: 13px;
+	width: 220px;
+}
+.cart-item-value {
+	font-size: 13px;
+	width: 110px;
+}
+.cart-item-total {
+	font-size: 13px;
+	width: 80px;
+}
+.hits-item-image {
+	position: relative;
+}
+.hits-item-image::before {
+	content: "";
+	
+	position: absolute;
+	width: 61px;
+	height: 61px;
+
+	background-image: url(../img/hit.svg);
 }
