@@ -70,7 +70,8 @@ input[type="radio"].visually-hidden {
 .catalog-list,
 .features-list,
 .drop-menu,
-.hits-list {
+.hits-list,
+.slider-list {
 	list-style: none;
 }
 .site-navigation-link {
@@ -708,7 +709,9 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 .subscription-login-input,
-.search-form-input {
+.search-form-input,
+.feedback-form input,
+.feedback-form textarea  {
 	border: none;
 	box-shadow: 0 0 0 1px #d3d3d2;
   border-radius: 5px;
@@ -717,13 +720,19 @@ input[type="radio"].visually-hidden {
 
 .subscription-login-input:hover,
 .search-form-input:hover,
-.login-form-input:hover {
+.login-form-input:hover,
+.feedback-form input:hover,
+.feedback-form textarea:hover {
 	box-shadow: 0 0 0 2px #c7c6c5;
+	outline: none;
 }
 .subscription-login-input:focus
 .search-form-input:focus
-.login-form-input:focus {
+.login-form-input:focus,
+.feedback-form input:focus,
+.feedback-form textarea:focus  {
 	box-shadow: 0 0 0 2px #8fbdec;
+	outline: none;
 }
 .search-form-input {
 	width: 310px;
@@ -924,31 +933,69 @@ border-radius: 0 0 7px 7px;
 }
 .hits-item-image {
 	display: block;
-	border-radius: 50%;
 }
 
 .hits-item-weight,
 .catalog-item-weight {
 	margin-left: -10px;
 }
+.feedback {
+	display: none;
+	position: fixed;
+	top: 50%;
+  left: 50%;
+  margin-left: -238px;
+  margin-top: -221px;
+}
 .close-button {
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	width: 20px;
+	height: 20px;
 }
-.feedback {
-	display: block;
+
+.close-button-feedback {
+
+	position: absolute;
+	top: 15px;
+	right: 18px;
+}
+.close-button-feedback::before,
+.close-button-feedback::after {
+  content: "";
+
+  position: absolute;
+	top: 9px;
+  left: -1px;
+
+  width: 23px;
+  height: 3px;
+
+  background-color: #000000;
+}
+.close-button-feedback::before {
+  transform: rotate(45deg);
+}
+
+.close-button-feedback::after {
+  transform: rotate(-45deg);
 }
 .feedback-form {
 	display: flex;
+	position: relative;
 	flex-direction: column;
-	width: 477px;
+	width: 478px;
 	padding: 20px 25px 27px 25px;
 	background-color: #f8f7f4;
-	border-radius: 7px;
+	border-radius: 5px;
 }
 .feedback input,
 .feedback textarea {
 	background-color: #ffffff;
+	padding: 15px;
+	border-radius: ;
 }
 .feedback input {
 	width: 267px;
@@ -956,7 +1003,9 @@ border-radius: 0 0 7px 7px;
 }
 .feedback textarea {
 	width: 428px;
+	min-height: 155px;
 	margin-bottom: 25px;
+	resize: none;
 } 
 .feedback-form-button {
 	padding: 13px 25px;
@@ -966,6 +1015,89 @@ border-radius: 0 0 7px 7px;
 	width: 355px;
 	margin-bottom: 20px;
 }
+.slide-button {
+	font-size: 32px;
+	line-height: 44px;
+	padding: 15px 41px;
+}
+.slide-title {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 670px;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+.slider {
+	position: relative;
+
+	padding-top: 268px;
+	padding-bottom: 40px;
+
+	text-align: center;
+}
+.slider-list {
+	margin: 0;
+	padding: 0;
+}
+.slider-controls label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  
+  font-size: 0;
+}
+.slide {
+	display: none;
+}
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/ice-cream-1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/ice-cream-2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/ice-cream-3.png");
+}
+.site-wrapper {
+	background-repeat: no-repeat;
+  background-position: top center;
+  
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+
+
 /*Для видимости сеток*/ 
 * { 
 background: rgba(0,0,255,0.05); 
