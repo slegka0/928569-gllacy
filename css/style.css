@@ -802,6 +802,7 @@ input[type="radio"].visually-hidden {
 }
 .login-form-link {
 	font-size: 13px;
+	font-weight: normal;
 	color: #323232;
 
 	text-decoration: underline;
@@ -832,6 +833,7 @@ input[type="radio"].visually-hidden {
 	right: 0px;
 	top: 32px;
 
+	font-weight: normal;
 	background-color: #f8f7f4;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
@@ -972,7 +974,7 @@ border-radius: 0 0 7px 7px;
 
 	position: absolute;
 	width: 17px;
-	height: 2px;	
+	height: 1px;	
 	left: -1px;
 	top: 6px;
 
@@ -1142,13 +1144,22 @@ border-radius: 0 0 7px 7px;
 }
 .pagination-list a {
 	display: block;
-	padding: 7px 10px;
+	width: 26px;
+	height: 26px;
+	text-align: center;
 
+
+	padding-left: 1px;
+  padding-top: 4px;
+	margin-right: 3px;
 	font-size: 16px;
 	line-height: 18px;
 	border-radius: 50%;
 
 	color: #ffffff;
+}
+.pagination-item:last-child {
+	margin-right: 0;
 }
 
 .pagination-item a:hover {
@@ -1161,6 +1172,23 @@ border-radius: 0 0 7px 7px;
 .pagination-item-current a {
 	color: #323232;
 	background-color: rgba(255, 255, 255, 1);
+}
+.pagination-item-forward a,
+.pagination-item-back a {
+	width: 26px;
+	height: 26px;
+}
+.pagination-item-forward,
+.pagination-item-back {
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  filter: contrast(500%);
+}
+.pagination-item-back {
+	margin-right: 3px;
+	opacity: 0.2;
+  transform: rotate(-180deg);
 }
 .catalog-item {
 	position: relative;
