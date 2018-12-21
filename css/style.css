@@ -112,6 +112,8 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: bold;
 	text-decoration: underline;
+	margin: 0;
+	padding: 0;
 }
 .subscription {
 	color: #5a5a5a;
@@ -367,6 +369,7 @@ input[type="radio"].visually-hidden {
 	padding: 12px;
 	width: 370px;
 }
+
 .blog-news-title {
 	margin-bottom: 68px;
 	width: 285px;
@@ -469,9 +472,9 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	text-decoration: none;
 }
-.box-catalog:active .site-navigation-link,
-.box-delivery:active .site-navigation-link,
-.box-company:active .site-navigation-link {
+.site-navigation-link:active,
+.site-navigation-link:active,
+.site-navigation-link:active {
 	background-color: #ededed;
 	box-shadow: inset 0px 2px 1px 0px #696969;
 }
@@ -696,6 +699,7 @@ input[type="radio"].visually-hidden {
 .search:hover path {
 	fill: #323232;
 }
+
 .blog-news a {
 	color: #323232;
 }
@@ -1207,5 +1211,9 @@ border-radius: 0 0 7px 7px;
 .hits-item:hover::before {
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
+
+
+
+
 
 
