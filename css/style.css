@@ -249,6 +249,7 @@ input[type="radio"].visually-hidden {
 	background-color: #eaddbf;
 	background-image: url(../img/waffle-bg.jpg);
 	background-repeat: no-repeat;
+	background-size: cover
 }
 
 .container {
@@ -354,17 +355,18 @@ input[type="radio"].visually-hidden {
 	padding: 11px 23px;
 	margin: 0;
 }
-.map img {
-	display: block;
-	margin: 0 auto;
-}
+
 .raspberries {
+	background-color: #97344e;
 	background-image: url(../img/raspberry-bg.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .chocolate {
+	background-color: #44281b;
 	background-image: url(../img/chocolate-bg.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 .offer-item {
 	display: flex;
@@ -402,7 +404,7 @@ input[type="radio"].visually-hidden {
 .main-footer {
 	display: flex;
   
-  padding-top: 37px;
+  padding-top: 35px;
   padding-bottom: 30px;
 }
 .social-buttons {
@@ -442,6 +444,7 @@ input[type="radio"].visually-hidden {
 .hits-list {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	margin: 0;
 	padding: 0;
 }
@@ -568,6 +571,10 @@ input[type="radio"].visually-hidden {
 .user-navigation li:hover {
 	background-color: rgba(255,255,255,1);
 	color: #323232;
+}
+.user-navigation .filled-cart {
+	color: #323232;
+	background-color: rgba(255,255,255,1);
 }
 .search:hover .search-form{
 	display: block;	
@@ -990,8 +997,7 @@ border-radius: 0 0 7px 7px;
 	position: fixed;
 	top: 50%;
   left: 50%;
-  margin-left: -238px;
-  margin-top: -221px;
+  transform: translate(-50%, -50%);
 }
 .close-button {
 	border: none;
@@ -1165,8 +1171,7 @@ border-radius: 0 0 7px 7px;
 .site-wrapper {
 	background-repeat: no-repeat;
   background-position: top center;
-  
-  transition: background-image 0.5s ease, background-color 0.5s ease;
+  min-width: 1200px;
 }
 .catalog {
 	display: flex;
@@ -1262,8 +1267,8 @@ border-radius: 0 0 7px 7px;
 	position: absolute;
 	left: -13px;
 	top: -5px;
-	width: 293px;
-	height: 405px;
+	right: -13px;
+	bottom: -90px;
 
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
@@ -1487,8 +1492,63 @@ border-radius: 0 0 7px 7px;
 	height: 4px;
 	background: rgba(248, 247, 244, 1);
 }
+.map {
+	display: flex;
+	justify-content: flex-end;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 62px 27px;
+	background-color: #e3e1cf;
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	width: 302px;
+	padding: 30px 25px;
+	background-color: #fefefe;
+	border-radius: 15px;
 
-
-
-
+}
+.contacts span {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #323232;
+}
+.contacts-button {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	padding: 11px 27px 11px 27px;
+}
+.contacts .adress,
+.contacts .telephon {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.contacts .adress {
+	margin-bottom: 18px;
+}
+.contacts .contacts-time {
+	margin-bottom: 24px;
+}
+.contacts p {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+.adress-title {
+	width: 155px;
+	margin-bottom: 2px;
+}
+.telephon-title {
+	margin-bottom: 3px;
+}
+.telephon {
+	margin-bottom: 2px;
+}
 
