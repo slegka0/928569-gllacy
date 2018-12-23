@@ -1495,11 +1495,11 @@ border-radius: 0 0 7px 7px;
 .map {
 	display: flex;
 	justify-content: flex-end;
-	width: 1200px;
-	margin: 0 auto;
-	padding: 62px 27px;
+	padding: 62px 0px;
 	background-color: #e3e1cf;
+	min-width: 1200px;
 	background-image: url(../img/map.jpg);
+	background-size: 100%; 
 	background-repeat: no-repeat;
 }
 .contacts {
@@ -1550,5 +1550,12 @@ border-radius: 0 0 7px 7px;
 }
 .telephon {
 	margin-bottom: 2px;
+}
+.map-container {
+	display: flex;
+	justify-content: flex-end;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 27px;
 }
 
