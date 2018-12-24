@@ -1613,4 +1613,6 @@ border-radius: 0 0 7px 7px;
 .drop-menu-current:hover a {
 	color: #323232;
 }
-
+.map iframe {
+	width: 100%;
+}
