@@ -1515,6 +1515,7 @@ border-radius: 0 0 7px 7px;
 	background: rgba(248, 247, 244, 1);
 }
 .map {
+	position: relative;
 	display: flex;
 	justify-content: flex-end;
 	background-color: #e3e1cf;
@@ -1544,11 +1545,12 @@ border-radius: 0 0 7px 7px;
 	color: #323232;
 }
 .map-container {
-	position: absolute;
+	position: relative;
 	
 	width: 1200px;
-	left: 50%;
-  transform: translateX(-50%);
+	height: 430px;
+	margin: 0 auto;
+ 
 }
 .contacts-button {
 	font-size: 18px;
@@ -1613,6 +1615,12 @@ border-radius: 0 0 7px 7px;
 .drop-menu-current:hover a {
 	color: #323232;
 }
+
 .map iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	width: 100%;
 }
