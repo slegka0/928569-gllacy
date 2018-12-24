@@ -1519,6 +1519,8 @@ border-radius: 0 0 7px 7px;
 	display: flex;
 	justify-content: flex-end;
 	min-height: 430px;
+	padding-top: 64px;
+	padding-bottom: 60px;
 	background-color: #e3e1cf;
 	min-width: 1200px;
 	background-image: url(../img/map.jpg);
@@ -1527,10 +1529,9 @@ border-radius: 0 0 7px 7px;
 	background-size: cover; 
 }
 .contacts {
-	position: absolute;
-	z-index: 3;
 	display: flex;
 	flex-direction: column;
+	min-height: 305px;
 	top: 64px;
 	right: 27px;
 	width: 302px;
@@ -1547,8 +1548,11 @@ border-radius: 0 0 7px 7px;
 }
 .map-container {
 	position: relative;
+	display: flex;
+	justify-content: flex-end;
 	
 	width: 1200px;
+	padding: 0 27px;
 	margin: 0 auto;
  
 }
