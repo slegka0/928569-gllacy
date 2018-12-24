@@ -494,7 +494,7 @@ input[type="radio"].visually-hidden {
 .box-company:hover .site-navigation-link {
 	background-color: #ffffff;
 }
-.box-catalog:hover a,
+.box-catalog:hover .site-navigation-link,
 .box-delivery:hover a,
 .box-company:hover a {
 	color: #323232;
@@ -513,7 +513,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 7px;
 
 	left: -6px;
-  top: 37px;
+  top: 36px;
 	z-index: 2;
 	position: absolute;
 
@@ -1577,4 +1577,13 @@ border-radius: 0 0 7px 7px;
 .modal-error {
 	animation-name: error;
 	animation-duration: 1s;
+}
+.drop-menu-current {
+	background-color: #d07058;
+}
+.drop-menu-current a {
+	color: #ffffff;
+}
+.drop-menu-current:hover a {
+	color: #323232;
 }
