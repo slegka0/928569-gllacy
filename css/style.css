@@ -1559,4 +1559,22 @@ border-radius: 0 0 7px 7px;
 	margin: 0 auto;
 	padding: 0 27px;
 }
-
+@keyframes invisibility {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes error {
+	0% { background-color: #ffffff; }
+	50% { background-color: #ff6e86; }
+	100% { background-color: #ffffff; }
+}
+.modal-show {
+	display: block;
+	margin: 0 auto;
+	animation-name: invisibility;
+	animation-duration: 1s;
+}
+.modal-error {
+	animation-name: error;
+	animation-duration: 1s;
+}
