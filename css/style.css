@@ -403,9 +403,19 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
 	display: flex;
+	position: relative;
   
   padding-top: 35px;
   padding-bottom: 30px;
+}
+.main-footer::before {
+	content: "";
+	position: absolute;
+	width: 1146px;
+	height: 1px;
+	top: 0px;
+	left: 27px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 .social-buttons {
 	display: flex;
@@ -520,13 +530,21 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .drop-menu a {
+	display: block;
 	color: #323232;
 	text-decoration: none;
-}
-.drop-menu li {
 	width: 144px;
-	padding: 6px 20px;
+	padding: 9px 20px 5px 20px;
 	border-radius: 0px;
+	margin-top: 3px;
+}
+.drop-menu a:last-child {
+	margin-bottom: 2px;
+}
+.drop-menu-supreme {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	margin-bottom: 3px;
 }
 .drop-menu li:hover {
 	background-color: #fbded7;
@@ -665,6 +683,10 @@ input[type="radio"].visually-hidden {
 	background-image: url(../img/logo-htmlacademy.svg);
 
 	top: -44px ;
+}*/
+/*Для видимости сеток*/ 
+* { 
+background: rgba(0,0,255,0.05); 
 }
 .catalog-item,
 .hits-item {
@@ -799,8 +821,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 128px;
 	height: 1px;
-	bottom: -7px;
-	left: -12px;
+	bottom: -3px;
+	left: 7px;
 	background-color: #d1d0ce;
 }
 .enter {
