@@ -1517,7 +1517,6 @@ border-radius: 0 0 7px 7px;
 .map {
 	display: flex;
 	justify-content: flex-end;
-	padding: 62px 0px;
 	background-color: #e3e1cf;
 	min-width: 1200px;
 	background-image: url(../img/map.jpg);
@@ -1526,8 +1525,12 @@ border-radius: 0 0 7px 7px;
 	background-size: cover; 
 }
 .contacts {
+	position: absolute;
+	z-index: 3;
 	display: flex;
 	flex-direction: column;
+	top: 64px;
+	right: 27px;
 	width: 302px;
 	padding: 30px 25px;
 	background-color: #fefefe;
@@ -1539,6 +1542,13 @@ border-radius: 0 0 7px 7px;
 	line-height: 20px;
 	font-weight: normal;
 	color: #323232;
+}
+.map-container {
+	position: absolute;
+	
+	width: 1200px;
+	left: 50%;
+  transform: translateX(-50%);
 }
 .contacts-button {
 	font-size: 18px;
@@ -1574,13 +1584,7 @@ border-radius: 0 0 7px 7px;
 .telephon {
 	margin-bottom: 2px;
 }
-.map-container {
-	display: flex;
-	justify-content: flex-end;
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 27px;
-}
+
 @keyframes invisibility {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
@@ -1608,4 +1612,7 @@ border-radius: 0 0 7px 7px;
 }
 .drop-menu-current:hover a {
 	color: #323232;
+}
+.map iframe {
+	margin: 0;
 }
