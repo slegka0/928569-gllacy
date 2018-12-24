@@ -1518,6 +1518,7 @@ border-radius: 0 0 7px 7px;
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
+	min-height: 430px;
 	background-color: #e3e1cf;
 	min-width: 1200px;
 	background-image: url(../img/map.jpg);
@@ -1548,7 +1549,6 @@ border-radius: 0 0 7px 7px;
 	position: relative;
 	
 	width: 1200px;
-	height: 430px;
 	margin: 0 auto;
  
 }
