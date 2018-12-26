@@ -125,6 +125,7 @@ input[type="radio"].visually-hidden {
 }
 .subscription-login-input::placeholder {
 	color: #999999;
+	font-weight: normal;
 }
 .button {
 	font-weight: bold;
@@ -156,6 +157,7 @@ input[type="radio"].visually-hidden {
 .feedback-email::placeholder,
 .feedback-message::placeholder {
 	color: #999999;
+	font-weight: normal;
 }
 
 .feedback-form input{
@@ -847,10 +849,23 @@ background: rgba(0,0,255,0.05);
 	background-color: #f8f7f4;
 	border-radius: 5px;
 }
+.login-form-input,
+.search-form-input,
+.subscription-login-input,
+.feedback-login,
+.feedback-email {
+	color: #323232;
+	font-weight: bold;
+}
+.login-form-input::placeholder,
+.search-form-input::placeholder,
+.subscription-form-input::placeholder {
+	font-weight: normal;
+}
 .login-form-input {
 	width: 240px;
 	padding: 15px;
-
+	
 	background-color: #ffffff;
 	box-shadow: 0 0 0 1px #d3d3d2;
 	border: none;
@@ -1163,6 +1178,9 @@ border-radius: 0 0 7px 7px;
   
   font-size: 0;
 }
+.slider-controls label:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
 .slide {
 	display: none;
 }
@@ -1358,12 +1376,18 @@ border-radius: 0 0 7px 7px;
 	align-self: flex-end;
 }
 .filter-button:hover {
+	border: none;
+	padding: 8px 30px;
 	color: #323232;
 	background-color: rgba(255, 255, 255, 1);
 	outline: none;
 }
 .filter-button:active {
-	outline: none;
+	border: none;
+	padding: 8px 30px;
+  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 1.004);
+	background-color: #ededed;
+  outline: none;
 }
 .filters-form-extender-item {
 	padding: 9px 3px 8px 49px;
@@ -1443,6 +1467,10 @@ border-radius: 0 0 7px 7px;
   background-repeat: no-repeat;
    
 }
+.extender-checkbox:hover,
+.tallow-radio:hover {
+	color: #323232;
+}
 .checkbox-inditicator::before,
 .radio-inditicator::before  {
 	opacity: 0.8;
@@ -1521,6 +1549,7 @@ border-radius: 0 0 7px 7px;
 	min-height: 430px;
 	padding-top: 64px;
 	padding-bottom: 60px;
+	padding-left: 842px;
 }
 .contacts {
 	display: flex;
@@ -1545,8 +1574,7 @@ border-radius: 0 0 7px 7px;
 	display: flex;
 	justify-content: flex-end;
 	
-	width: 1200px;
-	padding: 0 27px;
+	width: 305px;
 	margin: 0 auto;
  
 }
@@ -1554,7 +1582,7 @@ border-radius: 0 0 7px 7px;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
-	padding: 11px 27px 11px 27px;
+	padding: 10px 27px 11px 27px;
 }
 .contacts .adress,
 .contacts .telephon {
