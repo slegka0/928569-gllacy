@@ -18,28 +18,37 @@ close.addEventListener("click", function (evt) {
 	login.classList.remove("modal-error");
 	message.classList.remove("modal-error");
 	input.classList.remove("modal-error");
+	popup.classList.remove("modal-error-two");
+	popup.classList.remove("modal-error-two");
+	popup.classList.remove("modal-error-two");
 });
 form.addEventListener("submit", function (evt) {
 	if (!login.value) {
 		evt.preventDefault();
 		login.classList.remove("modal-error");
+		popup.classList.remove("modal-error-two");
 		login.offsetWidth = login.offsetWidth;
 		login.classList.add("modal-error");
+		popup.classList.add("modal-error-two");
 	}
 });
 form.addEventListener("submit", function (evt) {
 	if (!message.value) {
 		evt.preventDefault();
 		message.classList.remove("modal-error");
+		popup.classList.remove("modal-error-two");
 		message.offsetWidth = message.offsetWidth;
 		message.classList.add("modal-error");
+		popup.classList.add("modal-error-two");
 	}
 });
 form.addEventListener("submit", function (evt) {
 	if (!input.value) {
 		evt.preventDefault();
 		input.classList.remove("modal-error");
+		popup.classList.remove("modal-error-two");
 		input.offsetWidth = input.offsetWidth;
 		input.classList.add("modal-error");
+		popup.classList.add("modal-error-two");
 	}
 });
