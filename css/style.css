@@ -1455,8 +1455,7 @@ border-radius: 0 0 7px 7px;
   height: 25px;
 
   background-image: url(../img/radio-on.svg);
-  background-repeat: no-repeat;
-   
+  background-repeat: no-repeat;   
 }
 
 .extender-checkbox input[type="checkbox"] + .checkbox-inditicator::before {
@@ -1469,8 +1468,7 @@ border-radius: 0 0 7px 7px;
   height: 26px;
 
   background-image: url(../img/checkbox-off.svg);
-  background-repeat: no-repeat;
-   
+  background-repeat: no-repeat; 
 }
 .extender-checkbox input[type="checkbox"]:checked + .checkbox-inditicator::before {
 	content: "";
@@ -1483,7 +1481,6 @@ border-radius: 0 0 7px 7px;
 
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
-   
 }
 
 .checkbox-inditicator::before,
@@ -1566,7 +1563,6 @@ border-radius: 0 0 7px 7px;
 .map {
 	position: relative;
 	display: flex;
-	justify-content: flex-end;
 	min-height: 430px;
 	padding-top: 64px;
 	padding-bottom: 60px;
